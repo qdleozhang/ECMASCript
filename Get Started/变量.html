@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //隐式转换
+
+        document.write("100" + 100 + "<br>");  //100100
+        document.write(100 - '30'+ "<br>");    //70
+        document.write(100 / '30'+ "<br>");    //3.3333
+        document.write(100 + +"100");          //200
+
+        //显示转换
+        document.write(100 + Number('100px') + "<br>"); //200NaN
+        document.write(100 + parseInt('100.89px') + "<br>"); //200
+        document.write(100 + parseFloat('100.89px'));  //200.89
+
+
+    </script>
+</body>
+</html>
